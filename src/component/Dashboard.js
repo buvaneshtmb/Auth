@@ -17,7 +17,6 @@ function Dashboard() {
           headers: { Authorization: `Bearer ${token}` }
         })
         if(res.status===200){
-          console.log(res.data.users)
           setData(res.data.users)
         }
     } catch (error) {
